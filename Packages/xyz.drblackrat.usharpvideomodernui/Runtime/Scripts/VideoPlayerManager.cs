@@ -54,6 +54,11 @@ namespace UdonSharp.Video
             _initialized = true;
         }
 
+        public void Update()
+        {
+            CheckForVideoEnd();
+        }
+
         public override void OnVideoEnd()
         {
             receiver.OnVideoEnd();
@@ -120,6 +125,22 @@ namespace UdonSharp.Video
 
             _currentPlayer.Stop();
             _currentPlayer = unityVideoPlayer;
+        }
+        
+        /// <summary>
+        /// Ends the video shortly before it finishes playing to mitigate
+        /// problems with AVPro not invoking the OnVideoEnd event.
+        /// </summary>>
+        private void CheckForVideoEnd()
+        {
+            if (!_initialized || !_currentPlayer.IsPlaying) return;
+            
+            float videoEndThreshold = 0.5f;
+            if (_currentPlayer.GetTime() + videoEndThreshold >= _currentPlayer.GetDuration())
+            {
+                _currentPlayer.Stop();
+                OnVideoEnd();
+            }
         }
 
         public Texture GetVideoTexture()
