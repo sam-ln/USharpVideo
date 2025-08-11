@@ -1,0 +1,20 @@
+{
+  "name": "com.arcanescripts.usharpvideo",
+  "displayName": "USharpVideo",
+  "version": "1.2.0",
+  "unity": "2022.3",
+  "description": "A fork of USharpVideo with updated visuals and fixed playback",
+  "gitDependencies": {},
+  "vpmDependencies": {
+    "com.vrchat.worlds": "3.x.x"
+  },
+  "author": {
+    "name": "sam-ln",
+    "email": "dev@arcanescripts.com",
+    "url": "https://github.com/sam-ln"
+  },
+  "legacyFolders": {
+    "Assets\\USharpVideo": ""
+  },
+  "legacyFiles": {}
+}
