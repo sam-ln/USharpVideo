@@ -1,5 +1,5 @@
-# USharpVideoModernUI
-This is a fork from the popular VRChat USharpVideo video player with a new modern looking UI. It supports normal videos and live streams.
+# USharpVideo
+A fork of the MerlinVR's USharpVideo with updated visuals and fixed playback. It supports normal videos and live streams.
 
 ![image](https://github.com/DrBlackRat/USharpVideoModernUI/assets/46327609/8e0d9b69-fec2-441e-9fe4-c43ef9958826)
 
@@ -8,8 +8,8 @@ This is a fork from the popular VRChat USharpVideo video player with a new moder
 ### If you want to take a look at it in game first, you can visit the [Example World](https://vrchat.com/home/world/wrld_218396b0-f3c5-4f60-965c-0a27fa8d0a38)
 
 ## Download
-USharpVideoModernUI  is available via the [Creator Companion](https://vcc.docs.vrchat.com/) as a VPM package!
-###  [⬇️ My VPM / Creator Companion Listing](https://vpm.drblackrat.xyz)
+USharpVideo is available via the [Creator Companion](https://vcc.docs.vrchat.com/) as a VPM package!
+###  [⬇️ My VPM / Creator Companion Listing](https://sam-ln.github.io/vpm/)
 
 For Standalone Unity I still provide a Unity Package with every release.
 
@@ -42,5 +42,5 @@ Yes! The modernized UI still uses the default USharpVideo Sytles, however the de
   - https://github.com/MerlinVR/USharpVideo
 - Merlin (Original creator of USharpVideo & UdonSharp)
   - https://twitter.com/MerlinVR_
-- DrBlackRat (Creator of this Fork)
+- DrBlackRat (Creator of Modern UI Update)
   - https://drblackrat.xyz
