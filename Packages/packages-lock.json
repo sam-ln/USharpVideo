@@ -1,5 +1,11 @@
 {
   "dependencies": {
+    "com.arcanescripts.usharpvideo": {
+      "version": "file:com.arcanescripts.usharpvideo",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.unity.2d.sprite": {
       "version": "1.0.0",
       "depth": 0,
@@ -293,12 +299,6 @@
         "com.unity.inputsystem": "1.2.0",
         "com.unity.ai.navigation": "1.1.5"
       }
-    },
-    "xyz.drblackrat.usharpvideomodernui": {
-      "version": "file:xyz.drblackrat.usharpvideomodernui",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",

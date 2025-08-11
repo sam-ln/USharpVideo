@@ -1,5 +1,5 @@
 {
-    "name": "xyz.drblackrat.usharpvideomodernui",
+    "name": "com.arcanescripts.usharpvideo",
     "rootNamespace": "",
     "references": [
         "VRC.SDK3",
