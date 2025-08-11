@@ -1,5 +1,5 @@
 # USharpVideo
-A fork of the MerlinVR's USharpVideo with updated visuals and fixed playback. It supports normal videos and live streams.
+A fork of USharpVideo with updated visuals and fixed playback. It supports normal videos and live streams.
 
 ![image](https://github.com/DrBlackRat/USharpVideoModernUI/assets/46327609/8e0d9b69-fec2-441e-9fe4-c43ef9958826)
 
