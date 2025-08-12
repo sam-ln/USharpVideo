@@ -8,10 +8,10 @@ A fork of USharpVideo with updated visuals and fixed playback. It supports norma
 ### If you want to take a look at it in game first, you can visit the [Example World](https://vrchat.com/home/world/wrld_218396b0-f3c5-4f60-965c-0a27fa8d0a38)
 
 ## Download
-USharpVideo is available via the [Creator Companion](https://vcc.docs.vrchat.com/) as a VPM package!
-###  [⬇️ My VPM / Creator Companion Listing](https://sam-ln.github.io/vpm/)
+It's recommended to install USharpVideo via the [VRChat Creator Companion](https://vcc.docs.vrchat.com/) as a VPM package!
+###  [📥 My VRChat Creator Companion Repository](https://sam-ln.github.io/vpm/)
 
-For Standalone Unity I still provide a Unity Package with every release.
+For installation without the VCC, a .unitypackage file is provided as well.
 
 ## Features
 - Updated Modern UI
