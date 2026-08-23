@@ -35,6 +35,11 @@ namespace UdonSharp.Video
         [PublicAPI]
         public float syncThreshold = 0.85f;
         
+        [Tooltip("How many times the video player will retry loading a video that has not loaded in time before treating it as an error")]
+        [Min(0)]
+        [PublicAPI]
+        public int maxRetryCount = 4;
+
         [Range(0f, 1f)]
         [Tooltip("The default volume for the volume slider on the video player")]
         [SerializeField]
@@ -125,7 +130,6 @@ namespace UdonSharp.Video
         UdonSharpBehaviour[] _registeredCallbackReceivers;
 
         // Video loading state
-        const int MAX_RETRY_COUNT = 4;
         const float DEFAULT_RETRY_TIMEOUT = 35.0f;
         const float RATE_LIMIT_RETRY_TIMEOUT = 5.5f;
         const float VIDEO_ERROR_RETRY_TIMEOUT = 5f;
@@ -650,7 +654,7 @@ namespace UdonSharp.Video
                 {
                     _currentLoadingTime = DEFAULT_RETRY_TIMEOUT;
 
-                    if (++_currentRetryCount > MAX_RETRY_COUNT)
+                    if (++_currentRetryCount > maxRetryCount)
                     {
                         OnVideoError(VideoError.Unknown);
                     }

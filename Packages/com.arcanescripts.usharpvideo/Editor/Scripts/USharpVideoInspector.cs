@@ -22,6 +22,8 @@ namespace UdonSharp.Video.Internal
         SerializedProperty syncFrequencyProperty;
         SerializedProperty syncThresholdProperty;
 
+        SerializedProperty maxRetryCountProperty;
+
         SerializedProperty defaultVolumeProperty;
         SerializedProperty audioRangeProperty;
 
@@ -38,6 +40,8 @@ namespace UdonSharp.Video.Internal
             allowCreatorControlProperty = serializedObject.FindProperty(nameof(USharpVideoPlayer.allowInstanceCreatorControl));
             syncFrequencyProperty = serializedObject.FindProperty(nameof(USharpVideoPlayer.syncFrequency));
             syncThresholdProperty = serializedObject.FindProperty(nameof(USharpVideoPlayer.syncThreshold));
+
+            maxRetryCountProperty = serializedObject.FindProperty(nameof(USharpVideoPlayer.maxRetryCount));
 
             defaultVolumeProperty = serializedObject.FindProperty("defaultVolume");
             audioRangeProperty = serializedObject.FindProperty("audioRange");
@@ -76,6 +80,11 @@ namespace UdonSharp.Video.Internal
 
             EditorGUILayout.PropertyField(syncFrequencyProperty);
             EditorGUILayout.PropertyField(syncThresholdProperty);
+
+            EditorGUILayout.Space();
+            EditorGUILayout.LabelField("Video Loading", EditorStyles.boldLabel);
+
+            EditorGUILayout.PropertyField(maxRetryCountProperty);
 
             EditorGUILayout.Space();
             EditorGUILayout.LabelField("Audio", EditorStyles.boldLabel);
