@@ -63,7 +63,8 @@
                 if (any(uv <= 0) || any(uv >= 1))
                     return float3(0, 0, 0);
 
-                #if UNITY_UV_STARTS_AT_TOP
+                // AVPro output is bottom-up on D3D, but already top-down on Metal (iOS)
+                #if UNITY_UV_STARTS_AT_TOP && !defined(SHADER_API_METAL)
                 if (_IsAVPro)
                 {
                     uv = float2(uv.x, 1 - uv.y);

@@ -55,7 +55,8 @@ half3 VideoEmission(float2 uv)
         //    return float3(0, 0, 0);
     }
 
-    #if UNITY_UV_STARTS_AT_TOP
+    // AVPro output is bottom-up on D3D, but already top-down on Metal (iOS)
+    #if UNITY_UV_STARTS_AT_TOP && !defined(SHADER_API_METAL)
     if (_IsAVProInput)
     {
         uv = float2(uv.x, 1 - uv.y);
